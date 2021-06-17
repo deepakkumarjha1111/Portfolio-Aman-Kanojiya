@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Android Hollow";
+  src: url("Android\ Hollow.ttf");
+}
+@font-face {
+  font-family: "Bookman Old Style";
+  src: url("BOOKOS.ttf");
+}
+@font-face {
+  font-family: "Bradley Hand ITC";
+  src: url("BRADHITC.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 90px;
+  padding-top: 15px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 45%;
+  color: white;
+  font-size: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  font-family: Bookman Old Style;
+}
+
+.ham {
+  border: 1.5px solid white;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  background-color: white;
+  width: 70%;
+  height: 3.5px;
+  border-radius: 10px;
+}
+
+#short-line {
+  margin: 6px 0px;
+  width: 50%;
+}
+
+.large-logo {
+  margin: auto;
+  text-align: center;
+}
+
+.large-logo img {
+  margin: 50px auto;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 90px;
+}
+
+.element {
+  color: #9e9e9e;
+  font-size: 35px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-family: Bradley Hand ITC;
+}
+
+.name {
+  margin-top: -20px;
+}
