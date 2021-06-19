@@ -21,6 +21,24 @@ body {
   background-color: black;
 }
 
+.cursor {
+  pointer-events: none;
+  position: absolute;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.1s linear;
+}
+
+.link:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(4);
+}
+
 .navigation {
   position: fixed;
   top: 0px;
@@ -171,7 +189,7 @@ body {
 }
 
 .projects .parts .project:hover {
-  font-family: Agency FB;
+  font-family: cursive;
   color: white;
   letter-spacing: 4px;
   font-weight: 500;
@@ -179,6 +197,11 @@ body {
 
 .glass-touch {
   -webkit-box-reflect: below -5px linear-gradient(transparent, #0004);
+}
+
+::selection {
+  color: #060303;
+  background-color: black;
 }
 
 @keyframes rotate {

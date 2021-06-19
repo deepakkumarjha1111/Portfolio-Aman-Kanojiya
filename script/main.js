@@ -14,3 +14,11 @@ window.addEventListener("scroll", () => {
   text.style.opacity = `${1 - window.scrollY / 400}`;
   text.style.top = `${(window.scrollY / 400) * 500}px`;
 });
+
+const links = document.querySelectorAll(".link");
+const cursor = document.querySelector(".cursor");
+
+window.addEventListener("mousemove", (e) => {
+  cursor.style.top = e.pageY + "px";
+  cursor.style.left = e.pageX + "px";
+});
