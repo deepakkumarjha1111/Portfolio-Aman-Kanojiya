@@ -22,6 +22,9 @@ body {
 }
 
 .navigation {
+  position: fixed;
+  top: 0px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -72,6 +75,11 @@ body {
 .large-logo {
   margin: auto;
   text-align: center;
+  margin-top: 100px;
+}
+
+#large-logo {
+  position: relative;
 }
 
 .large-logo img {
@@ -96,4 +104,103 @@ body {
 
 .name {
   margin-top: -20px;
+}
+
+.tag-scroll {
+  height: 200px;
+  width: 200px;
+  margin-right: 100px;
+  animation: infinite 10s rotate;
+  animation-timing-function: linear;
+}
+
+.scroll {
+  height: 100%;
+  width: 100%;
+}
+
+.about {
+  width: 100vh;
+  margin: 300px auto;
+}
+
+.about h1 {
+  font-family: Android Hollow;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
+.about p {
+  font-family: Bookman Old Style;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.projects {
+  padding: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.projects h1 {
+  font-size: 60px;
+  font-family: Android Hollow;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.parts {
+  width: 80%;
+}
+
+.projects .parts .project {
+  color: #c5c5c5d9;
+  font-family: Bradley Hand ITC;
+  font-size: 70px;
+  font-weight: 100;
+  padding: 0px 40px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.projects .parts .project:hover {
+  font-family: Agency FB;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.glass-touch {
+  -webkit-box-reflect: below -5px linear-gradient(transparent, #0004);
+}
+
+@keyframes rotate {
+  /* 0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  } */
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
