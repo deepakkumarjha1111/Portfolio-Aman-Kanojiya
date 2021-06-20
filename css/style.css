@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "Android Hollow";
-  src: url("Android\ Hollow.ttf");
+  font-family: "Androidin";
+  src: url("../elements/AndroidHollow.ttf");
 }
 @font-face {
-  font-family: "Bookman Old Style";
-  src: url("BOOKOS.ttf");
+  font-family: "Bookman Old";
+  src: url("../elements/BOOKOS.TTF");
 }
 @font-face {
-  font-family: "Bradley Hand ITC";
-  src: url("BRADHITC.ttf");
+  font-family: "Bradley Hand";
+  src: url("../elements/BRADHITC.TTF");
 }
 
 * {
@@ -64,7 +64,7 @@ body {
   text-decoration: none;
   color: white;
   letter-spacing: 1px;
-  font-family: Bookman Old Style;
+  font-family: Bookman Old;
 }
 
 .ham {
@@ -101,7 +101,7 @@ body {
 }
 
 .large-logo img {
-  margin: 50px auto;
+  margin: 50px 0px auto auto;
 }
 
 .tag {
@@ -117,7 +117,7 @@ body {
   font-size: 35px;
   letter-spacing: 2px;
   display: inline-block;
-  font-family: Bradley Hand ITC;
+  font-family: Bradley Hand;
 }
 
 .name {
@@ -128,7 +128,7 @@ body {
   height: 200px;
   width: 200px;
   margin-right: 100px;
-  animation: infinite 10s rotate;
+  animation: infinite 8s rotate;
   animation-timing-function: linear;
 }
 
@@ -143,14 +143,14 @@ body {
 }
 
 .about h1 {
-  font-family: Android Hollow;
+  font-family: Androidin;
   font-size: 60px;
   color: white;
   text-align: center;
 }
 
 .about p {
-  font-family: Bookman Old Style;
+  font-family: Bookman Old;
   font-size: 16px;
   color: white;
   letter-spacing: 1px;
@@ -168,7 +168,7 @@ body {
 
 .projects h1 {
   font-size: 60px;
-  font-family: Android Hollow;
+  font-family: Androidin;
   color: white;
   margin-bottom: 80px;
 }
@@ -179,7 +179,7 @@ body {
 
 .projects .parts .project {
   color: #c5c5c5d9;
-  font-family: Bradley Hand ITC;
+  font-family: Bradley Hand;
   font-size: 70px;
   font-weight: 100;
   padding: 0px 40px;
@@ -204,22 +204,40 @@ body {
   background-color: black;
 }
 
+.social {
+  color: black;
+  z-index: 2;
+  margin: 100px auto;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+}
+
+.social h1 {
+  color: white;
+  font-family: Androidin;
+  font-size: 50px;
+}
+
+.upper {
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: wheat;
+}
+
+.social span {
+  height: 50px;
+  width: 50px;
+  top: 100px;
+  background-color: red;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+}
+
 @keyframes rotate {
-  /* 0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-90deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  } */
   0% {
     transform: rotate(0deg);
   }
