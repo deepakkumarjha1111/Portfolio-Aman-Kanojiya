@@ -11,8 +11,10 @@ const text = document.getElementById("large-logo");
 const elements = document.querySelectorAll(".scroll-anim");
 
 window.addEventListener("scroll", () => {
-  text.style.opacity = `${1 - window.scrollY / 400}`;
-  text.style.top = `${(window.scrollY / 400) * 500}px`;
+  if (window.scrollY <= 1600) {
+    text.style.opacity = `${1 - window.scrollY / 400}`;
+    text.style.top = `${(window.scrollY / 400) * 500}px`;
+  }
 });
 
 const links = document.querySelectorAll(".link");
