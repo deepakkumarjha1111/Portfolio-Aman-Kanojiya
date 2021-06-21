@@ -1,12 +1,3 @@
-// --------------fade in animation for main-----------
-// let text = document.getElementById("main_text");
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     $("#large-logo").css("opacity", 1 - $(window).scrollTop() / 400);
-//     $("#large-logo").css("margin-top", ($(window).scrollTop() / 400) * 500);
-//     // console.log($(window).scrollTop()/400)*500 , 1- $(window).scrollTop() / 400
-//   });
-// });
 const text = document.getElementById("large-logo");
 const elements = document.querySelectorAll(".scroll-anim");
 
@@ -38,5 +29,46 @@ window.addEventListener("scroll", () => {
 document.querySelectorAll(".images").forEach((element) => {
   element.addEventListener("mouseover", () => {
     cursor.classList.toggle("cursor-img");
+  });
+  element.addEventListener("mouseleave", () => {
+    cursor.classList.toggle("cursor-img");
+  });
+});
+
+function update(e) {
+  var x = e.clientX || e.touches[0].clientX;
+  var y = e.clientY || e.touches[0].clientY;
+
+  document.documentElement.style.setProperty("--cursorX", x + "px");
+  document.documentElement.style.setProperty("--cursorY", y + "px");
+}
+
+document.querySelector(".social").addEventListener("mousemove", update);
+document.querySelector(".social").addEventListener("touchmove", update);
+
+const project = document.querySelectorAll(".project");
+
+project.forEach((element) => {
+  element.addEventListener("mouseover", () => {
+    const images = [
+      "gamebase.png",
+      "blogsite.png",
+      "aromaMocha.png",
+      "numerical.png",
+      "",
+      "skillbadges.jpg",
+    ];
+    images.forEach((image) => {
+      if (element.classList[1] == image.split(".")[0]) {
+        var x = document.getElementById("project-main");
+        x.style.background = `url(../elements/${image})`;
+        x.style.backgroundPosition = "center";
+        x.style.backgroundSize = "cover";
+        x.style.backgroundRepeat = "no-repeat";
+      }
+    });
+  });
+  element.addEventListener("mouseleave", () => {
+    document.getElementById("project-main").style.background = "";
   });
 });
