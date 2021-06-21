@@ -24,3 +24,19 @@ window.addEventListener("mousemove", (e) => {
   cursor.style.top = e.pageY + "px";
   cursor.style.left = e.pageX + "px";
 });
+
+const part_1 = document.getElementById("para-1");
+const part_2 = document.getElementById("para-2");
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 2500 && window.scrollY <= 6000) {
+    var paddingLeft = 4000;
+    part_1.style.paddingLeft = `${paddingLeft - window.scrollY}px`;
+    part_2.style.paddingLeft = `${paddingLeft - window.scrollY}px`;
+  }
+});
+
+document.querySelectorAll(".images").forEach((element) => {
+  element.addEventListener("mouseover", () => {
+    cursor.classList.toggle("cursor-img");
+  });
+});

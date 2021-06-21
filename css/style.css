@@ -19,6 +19,8 @@
 
 body {
   background-color: black;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .cursor {
@@ -35,6 +37,12 @@ body {
   transition: 0.1s linear;
 }
 
+.cursor-img {
+  mix-blend-mode: saturation;
+  transform: translate(-50%, -50%) scale(1.5);
+  border: 10px solid black;
+}
+
 .link:hover ~ .cursor {
   transform: translate(-50%, -50%) scale(4);
 }
@@ -49,6 +57,7 @@ body {
   justify-content: space-between;
   padding: 5px 90px;
   padding-top: 15px;
+  z-index: 100;
 }
 
 .items {
@@ -235,6 +244,55 @@ body {
   z-index: 1;
   text-align: center;
   position: relative;
+}
+
+.learner {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 250px 0px;
+}
+
+.learner p {
+  position: absolute;
+  font-size: 80px;
+  font-family: Bradley Hand;
+  /* font-family: Androidin; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 5000px;
+  overflow: hidden;
+}
+
+.learner p span img {
+  height: 180px;
+  width: 180px;
+}
+
+#para-1 {
+  z-index: 1;
+  transform: rotate(351deg) scale(0.8);
+  opacity: 0.6;
+  transform: perspective(400);
+}
+
+.learner img {
+  height: 450px;
+  border-radius: 20px;
+  z-index: 3;
+  position: relative;
+  perspective: 700;
+  transform: rotate3d(20deg);
+  filter: brightness(0.7);
+}
+
+#para-2 {
+  z-index: 4;
+  transform: rotate(14deg);
 }
 
 @keyframes rotate {
