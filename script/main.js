@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
   if (window.scrollY >= 2500 && window.scrollY <= 6000) {
     var paddingLeft = 4000;
     part_1.style.paddingLeft = `${paddingLeft - window.scrollY}px`;
-    part_2.style.paddingLeft = `${paddingLeft - window.scrollY}px`;
+    part_2.style.paddingRight = `${paddingLeft - window.scrollY}px`;
   }
 });
 
@@ -71,4 +71,32 @@ project.forEach((element) => {
   element.addEventListener("mouseleave", () => {
     document.getElementById("project-main").style.background = "";
   });
+});
+
+// function search(event) {
+//   var torch = document.getElementsByClassName("social")[0];
+//   torch.style.clipPath = `circle(80px at ${event.pageX}px ${
+//     event.pageY - 1958.4000244140625
+//   }px)`;
+//   console.log(
+//     event.pageX,
+//     event.pageY - 1958.4000244140625 - 431.5999755859375 + 26
+//   );
+// }
+
+var pos = document.documentElement;
+pos.addEventListener("mousemove", (e) => {
+  {
+    pos.style.setProperty("--x", e.clientX + "px");
+  }
+  {
+    pos.style.setProperty("--y", e.clientY + "px");
+  }
+});
+
+document.querySelector(".social").addEventListener("mouseover", () => {
+  cursor.style.display = "none";
+});
+document.querySelector(".social").addEventListener("mouseleave", () => {
+  cursor.style.display = "block";
 });
