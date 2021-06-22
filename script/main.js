@@ -61,7 +61,7 @@ project.forEach((element) => {
     images.forEach((image) => {
       if (element.classList[1] == image.split(".")[0]) {
         var x = document.getElementById("project-main");
-        x.style.background = `url(../elements/${image})`;
+        x.style.background = `url(./elements/${image})`;
         x.style.backgroundPosition = "center";
         x.style.backgroundSize = "cover";
         x.style.backgroundRepeat = "no-repeat";
