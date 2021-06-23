@@ -101,3 +101,24 @@ document.querySelector(".social").addEventListener("mouseleave", () => {
   cursor.style.display = "block";
 });
 
+const close = document.getElementById("close");
+const nav = document.querySelector(".top-nav");
+const ham = document.getElementById("hamburger");
+
+ham.addEventListener("click", () => {
+  nav.classList.toggle("nav-close");
+});
+close.addEventListener("click", () => {
+  nav.classList.toggle("nav-close");
+});
+
+document.querySelectorAll(".hover").forEach((ele) => {
+  ele.addEventListener("mouseover", () => {
+    document.querySelector(".background-nav").innerText = ele.classList[1];
+  });
+});
+document.querySelectorAll(".hover").forEach((ele) => {
+  ele.addEventListener("mouseleave", () => {
+    document.querySelector(".background-nav").innerText = "";
+  });
+});
