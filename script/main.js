@@ -100,3 +100,4 @@ document.querySelector(".social").addEventListener("mouseover", () => {
 document.querySelector(".social").addEventListener("mouseleave", () => {
   cursor.style.display = "block";
 });
+

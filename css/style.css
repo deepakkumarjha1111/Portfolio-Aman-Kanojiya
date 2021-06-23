@@ -133,6 +133,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0px 90px;
+  flex-wrap: wrap;
 }
 
 .element {
@@ -145,6 +146,14 @@ body {
 
 .name {
   margin-top: -20px;
+}
+
+.name p {
+  font-family: Androidin;
+  font-size: 100px;
+  font-weight: 500;
+  color: white;
+  margin-top: 22px;
 }
 
 .tag-scroll {
@@ -182,7 +191,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   margin-top: 20px;
-  width: 700px;
+  width: 50vw;
 }
 
 .projects {
@@ -431,6 +440,7 @@ body {
   justify-content: space-between;
   color: white;
   padding: 80px;
+  flex-wrap: wrap;
 }
 
 .social-small {
@@ -439,6 +449,7 @@ body {
   width: 40%;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .bottom-footer p {
@@ -446,6 +457,7 @@ body {
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
+  flex-wrap: wrap;
 }
 
 .hover-image {
@@ -462,5 +474,24 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 800px) {
+  .something {
+    display: none;
+  }
+  .contact {
+    width: 100%;
+  }
+  .link {
+    display: none;
+    width: auto;
+  }
+  .about p {
+    width: 80vw;
+  }
+  .learner p {
+    display: none;
   }
 }
