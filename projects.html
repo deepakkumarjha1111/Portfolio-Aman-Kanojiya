@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman | Projects</title>
+    <link rel="stylesheet" href="css/project.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <section class="project" id="project-1"><h1>page-1</h1></section>
+      <section class="project" id="project-2"><h1>page-2</h1></section>
+      <section class="project" id="project-3"><h1>page-3</h1></section>
+      <section class="project" id="project-4"><h1>page-4</h1></section>
+      <section class="project" id="project-5"><h1>page-5</h1></section>
+      <section class="project" id="project-6"><h1>page-6</h1></section>
+    </div>
+  </body>
+  <script src="script/index.js"></script>
+  <script>
+    var blocks = document.getElementsByClassName("project");
+    var container = document.getElementsByClassName("container");
+    var hs = new HorizontalScroll.default({
+      blocks: blocks,
+      container: container,
+      isAnimated: true,
+      springEffect: 0.5,
+    });
+  </script>
+</html>
