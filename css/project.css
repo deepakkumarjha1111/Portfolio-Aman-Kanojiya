@@ -15,6 +15,10 @@ body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #03032b;
 }
 
 body .container section {
@@ -30,41 +34,65 @@ body .container section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  width: 70vw;
+  height: 70vh;
   font-size: 40px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
+  margin: 100px 300px 20px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container section h1 {
+  color: white;
+  position: relative;
+  top: 450px;
+  width: 100%;
+  text-align: center;
 }
 
 body .container section:nth-child(1) {
-  background-color: #1c1c1c;
-  color: greenyellow;
+  background: url("../elements/blogsite.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body .container section:nth-child(2) {
-  background-color: #262626;
-  color: red;
+  background: url("../elements/aromaMocha.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body .container section:nth-child(3) {
-  background-color: #303030;
-  color: orange;
+  background: url("../elements/gamebase.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body .container section:nth-child(4) {
-  background-color: #3a3a3a;
-  color: pink;
+  background: url("../elements/skillbadges.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body .container section:nth-child(5) {
-  background-color: #444444;
-  color: yellow;
+  background: url("../elements/numerical.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body .container section:nth-child(6) {
-  background-color: #4e4e4e;
-  color: brown;
+  background: url("../elements/blogsite.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=project.css.map */

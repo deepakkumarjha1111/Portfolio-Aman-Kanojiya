@@ -28,14 +28,6 @@ body {
   width: 100vw;
 }
 
-.legend-video {
-  position: fixed;
-  z-index: -1000;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-}
-
 .cursor {
   pointer-events: none;
   position: absolute;
@@ -535,7 +527,7 @@ body {
   font-size: 30px;
   font-weight: 400;
   top: 40px;
-  right: 40px;
+  right: 180px;
   cursor: pointer;
 }
 

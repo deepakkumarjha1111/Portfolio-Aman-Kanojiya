@@ -3,7 +3,7 @@ const elements = document.querySelectorAll(".scroll-anim");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY <= 1600) {
-    text.style.opacity = `${1 - window.scrollY / 400}`;
+    text.style.opacity = `${1 - window.scrollY / 200}`;
     text.style.top = `${(window.scrollY / 400) * 500}px`;
   }
 });
@@ -19,8 +19,8 @@ window.addEventListener("mousemove", (e) => {
 const part_1 = document.getElementById("para-1");
 const part_2 = document.getElementById("para-2");
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 2500 && window.scrollY <= 6000) {
-    var paddingLeft = 4000;
+  if (window.scrollY >= 1800 && window.scrollY <= 5000) {
+    var paddingLeft = 3000;
     part_1.style.paddingLeft = `${paddingLeft - window.scrollY}px`;
     part_2.style.paddingRight = `${paddingLeft - window.scrollY}px`;
   }
@@ -35,43 +35,43 @@ document.querySelectorAll(".images").forEach((element) => {
   });
 });
 
-function update(e) {
-  var x = e.clientX || e.touches[0].clientX;
-  var y = e.clientY || e.touches[0].clientY;
+// function update(e) {
+//   var x = e.clientX || e.touches[0].clientX;
+//   var y = e.clientY || e.touches[0].clientY;
 
-  document.documentElement.style.setProperty("--cursorX", x + "px");
-  document.documentElement.style.setProperty("--cursorY", y + "px");
-}
+//   document.documentElement.style.setProperty("--cursorX", x + "px");
+//   document.documentElement.style.setProperty("--cursorY", y + "px");
+// }
 
-document.querySelector(".social").addEventListener("mousemove", update);
-document.querySelector(".social").addEventListener("touchmove", update);
+// document.querySelector(".social").addEventListener("mousemove", update);
+// document.querySelector(".social").addEventListener("touchmove", update);
 
 const project = document.querySelectorAll(".project");
 
-project.forEach((element) => {
-  element.addEventListener("mouseover", () => {
-    const images = [
-      "gamebase.png",
-      "blogsite.png",
-      "aromaMocha.png",
-      "numerical.png",
-      "",
-      "skillbadges.jpg",
-    ];
-    images.forEach((image) => {
-      if (element.classList[1] == image.split(".")[0]) {
-        var x = document.getElementById("project-main");
-        x.style.background = `url(./elements/${image})`;
-        x.style.backgroundPosition = "center";
-        x.style.backgroundSize = "cover";
-        x.style.backgroundRepeat = "no-repeat";
-      }
-    });
-  });
-  element.addEventListener("mouseleave", () => {
-    document.getElementById("project-main").style.background = "";
-  });
-});
+// project.forEach((element) => {
+//   element.addEventListener("mouseover", () => {
+//     const images = [
+//       "gamebase.png",
+//       "blogsite.png",
+//       "aromaMocha.png",
+//       "numerical.png",
+//       "",
+//       "skillbadges.jpg",
+//     ];
+//     images.forEach((image) => {
+//       if (element.classList[1] == image.split(".")[0]) {
+//         var x = document.getElementById("project-main");
+//         x.style.background = `url(./elements/${image})`;
+//         x.style.backgroundPosition = "center";
+//         x.style.backgroundSize = "cover";
+//         x.style.backgroundRepeat = "no-repeat";
+//       }
+//     });
+//   });
+//   element.addEventListener("mouseleave", () => {
+//     document.getElementById("project-main").style.background = "";
+//   });
+// });
 
 // function search(event) {
 //   var torch = document.getElementsByClassName("social")[0];
@@ -94,12 +94,12 @@ pos.addEventListener("mousemove", (e) => {
   }
 });
 
-document.querySelector(".social").addEventListener("mouseover", () => {
-  cursor.style.display = "none";
-});
-document.querySelector(".social").addEventListener("mouseleave", () => {
-  cursor.style.display = "block";
-});
+// document.querySelector(".social").addEventListener("mouseover", () => {
+//   cursor.style.display = "none";
+// });
+// document.querySelector(".social").addEventListener("mouseleave", () => {
+//   cursor.style.display = "block";
+// });
 
 const close = document.getElementById("close");
 const nav = document.querySelector(".top-nav");

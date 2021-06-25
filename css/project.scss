@@ -11,42 +11,68 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     display: flex;
+    align-items: center;
+    background-color: rgb(3, 3, 43);
 
     section {
       flex: none;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100vw;
-      height: 100vh;
+      width: 70vw;
+      height: 70vh;
       font-size: 40px;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-weight: 600;
-      scroll-snap-align: start;
+      scroll-snap-align: center;
+      margin: 100px 300px 20px 100px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      h1 {
+        color: white;
+        position: relative;
+        top: 450px;
+        width: 100%;
+        text-align: center;
+      }
 
       &:nth-child(1) {
-        background-color: rgb(28, 28, 28);
-        color: greenyellow;
+        background: url("../elements/blogsite.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       &:nth-child(2) {
-        background-color: rgb(38, 38, 38);
-        color: red;
+        background: url("../elements/aromaMocha.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       &:nth-child(3) {
-        background-color: rgb(48, 48, 48);
-        color: orange;
+        background: url("../elements/gamebase.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       &:nth-child(4) {
-        background-color: rgb(58, 58, 58);
-        color: pink;
+        background: url("../elements/skillbadges.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       &:nth-child(5) {
-        background-color: rgb(68, 68, 68);
-        color: yellow;
+        background: url("../elements/numerical.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       &:nth-child(6) {
-        background-color: rgb(78, 78, 78);
-        color: brown;
+        background: url("../elements/blogsite.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     }
   }
